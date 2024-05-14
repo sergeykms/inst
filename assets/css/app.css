@@ -1,0 +1,18 @@
+.hide_element {
+    display: none;
+}
+
+.show_element {
+    display: block;
+}
+
+.login__section {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-width: 500px;
+}
+
+.root {
+    min-height: 100vh;
+}
