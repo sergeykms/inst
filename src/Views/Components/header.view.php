@@ -24,10 +24,6 @@ $auth = $_COOKIE['jwt'] ?? null;
                         <a class="nav-link <?= $page === 'about' ? 'active' : '' ?>"
                            aria-current="page" href="/about">О нас</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?= $page === 'contacts' ? 'active' : '' ?>"
-                           aria-current="page" href="/contacts">Контакты</a>
-                    </li>
                 </ul>
                 <a href="/login" class="btn btn-outline-success <?php echo $auth ? 'hide_element' : '' ?>">Войти</a>
                 <form class="d-flex" action="/logout" method="post">

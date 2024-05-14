@@ -20,7 +20,6 @@ $path =$_SERVER['REQUEST_URI'];
 Route::page('/', PagesController::class, 'layout', ['page' => 'main', 'unavailable' => ['jwt' => false], 'goTo' => '/login']);
 Route::page('/home', PagesController::class, 'layout', ['page' => 'home', 'unavailable' => ['jwt' => false], 'goTo' => '/login']);
 Route::page('/about', PagesController::class, 'layout', ['page' => 'about','unavailable' => ['jwt' => false], 'goTo' => '/login']);
-Route::page('/contacts', PagesController::class, 'layout', ['page' => 'contacts', 'unavailable' => ['jwt' => false], 'goTo' => '/login']);
 Route::page('/login', PagesController::class, 'layout', ['page' => 'login', 'unavailable' => ['jwt' => true], 'goTo' => '/']);
 Route::page('/register', PagesController::class, 'layout', ['page' => 'register', 'unavailable' => ['jwt' => true], 'goTo' => '/']);
 Route::page('/404', PagesController::class, 'layout', ['page' => '404']);

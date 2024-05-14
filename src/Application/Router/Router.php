@@ -29,7 +29,7 @@ class Router
                 if ($route['uri'] === $path) {
                     $controller = new $route['controller'](); // создание инстанса класс контроллера по статической ссылке, содержащейся в $route
                     $auth = Services::isUserChecked();
-                    $params = $route['params'] += ['auth' => $auth]; // добавление к параметрам значения авторизироан ли пользователь
+                    $params = $route['params']; // добавление к параметрам значения авторизироан ли пользователь
                     $controller->getViews($route['views'], $params); // вызов метода контроллера для отображени view из $route
                     return;
                 }

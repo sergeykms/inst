@@ -1,3 +1,3 @@
 
-<script src="../../../assets/js/bootstrap.bundle.min.js">
+<script src="../../../assets/js/bootstrap.bundle.min.js" defer>
 </script>
